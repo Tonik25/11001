@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+<head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="Style.css" />--> 
+
+    <title>Test</title>
+    
+
+
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+    <script src="Scripts/StateController.js"></script>
+
+
+
+   
+
+
+</head>
+<body style="background-color:azure">
+
+    <!--<input type="button" onclick="location.href=" value="Test Bild" />-->
+
+   
+    <!--<div class="container">
+
+
+        <div style="height:20px"></div>
+
+        
+        <div class="row">
+
+
+
+            <div class="col-sm-6">
+
+                <div class="well">
+                    Liste <span class="badge">25</span></a><br>
+                </div>
+
+
+                <div class="well">
+
+                    <ul class="list-group" id="Liste"></ul>
+                </div>
+
+                <div class="well">
+
+                    <button type="button" class="btn btn-primary" onclick="addstate()">Add Karte</button>
+
+                    <input class="form-control input-lg" id="inputliste" type="text">
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+
+            <div class="col-sm-6">
+
+                <div class="well">
+                    Name aus Liste
+                </div>
+
+                <div class="well">
+
+
+                    <div class="well">
+                        <input class="form-control input-lg" id="input" >
+                    </div>
+
+
+                    <div class="well">
+                        Bild?
+                    </div>
+
+
+                    <div id="Optionenliste" class="well">
+
+
+                        
+
+                    </div>
+                     
+
+
+
+
+
+
+
+                </div>
+
+                <div class="well">
+                    <button type="button" class="btn btn-primary" onclick="addOption()">Add Option</button>
+                    <button type="button" class="btn btn-primary" onclick="addOption()">Add Bild</button>
+                    <button type="button" class="btn btn-primary" onclick="addOption()">Add Link</button>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+    </div>-->
+
+
+    <div class="container">
+        <div style="height:20px"></div>
+
+
+        <div class="row">
+
+
+            <div class="col-sm-6">
+                <div class="well" >
+                    <ul id="Kartenliste" class="list-group"></ul>
+                </div>
+
+                <div class="well">
+                    <input class="form-control input-lg" id="inputliste" onkeydown="if (event.keyCode == 13) { addstate() }">
+
+                    <button type="button" class="btn btn-primary" onclick="addstate()">
+                        Add Karte
+                    </button>
+                </div>           
+            </div>
+
+
+
+            <div class="col-sm-6">
+
+                <div class="well" id="Karte">
+                
+                </div>
+                
+
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+</body>
+</html>
